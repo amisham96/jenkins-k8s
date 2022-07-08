@@ -32,4 +32,4 @@ spec:
   ports:                      # Forward incoming connections on port 8080 to the target port 8081
   - name: http
     port: 8080
-    targetPort: 8081
+    targetPort: 8080
