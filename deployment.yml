@@ -29,7 +29,7 @@ spec:
   type: NodePort              # The service will be exposed by opening a Port on each node and proxying it. 
   selector:
     app: emp-app          # The service exposes Pods with label `app=polling-app-server`
-  ports:                      # Forward incoming connections on port 8080 to the target port 8080
+  ports:                      # Forward incoming connections on port 8080 to the target port 8081
   - name: http
     port: 8080
-    targetPort: 30163
+    targetPort: 8081
