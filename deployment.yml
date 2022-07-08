@@ -26,7 +26,7 @@ metadata:
   labels:                     # Labels that will be applied to this resource
     app: emp-app
 spec:                         
-  type: LoadBalancer              # The service will be exposed by opening a Port on each node and proxying it. 
+  type: NodePort              # The service will be exposed by opening a Port on each node and proxying it. 
   selector:
     app: emp-app          # The service exposes Pods with label `app=polling-app-server`
   ports:                      # Forward incoming connections on port 8080 to the target port 8080
